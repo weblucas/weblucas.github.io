@@ -19,6 +19,27 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+:target {
+  scroll-margin-top: 80px; /* Adjust this value to match the height of your navbar */
+}
+
+.skills-list li {
+  position: relative;
+  padding-left: 20px; /* Space for the circle */
+  margin-bottom: 10px; /* Spacing between items */
+}
+
+.skills-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px; /* Adjust to align vertically */
+  width: 8px; /* Circle size */
+  height: 8px; /* Circle size */
+  background-color: #007bff; /* Circle color */
+  border-radius: 50%; /* Makes it a circle */
+}
+
 a {
   color: #2d7788;
   text-decoration: none;
